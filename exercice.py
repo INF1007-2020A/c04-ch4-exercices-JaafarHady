@@ -3,11 +3,17 @@
 
 
 def is_even_len(string: str) -> bool:
-    pass
+     a = len(string)%2
+     if a == 0 :
+        True
+     else:
+         False
+     return a
 
 
 def remove_third_char(string: str) -> str:
-    pass
+    b = len(string)
+    return (string[0:2] + string[3:b])
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
@@ -29,7 +35,7 @@ def main() -> None:
     else:
         print(f"Le nombre de caractère dans la chaine {chaine} est impair")
 
-    chaine = "salut monde!"
+    chaine = "salut le monde!"
     print(f"On supprime le 3e caratère dans la chaine: {chaine}. Résultat : {remove_third_char(chaine)}")
 
     chaine = "hello world!"
